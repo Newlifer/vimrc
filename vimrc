@@ -28,6 +28,10 @@ Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'bling/vim-airline'
 Plugin 'adlawson/vim-sorcerer'
+Plugin 'scrooloose/NERDTree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'majutsushi/tagbar'
+Plugin 'kien/ctrlp.vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
