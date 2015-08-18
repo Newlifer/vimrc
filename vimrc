@@ -27,6 +27,7 @@ Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 Plugin 'user/L9', {'name': 'newL9'}
 
 Plugin 'bling/vim-airline'
+Plugin 'adlawson/vim-sorcerer'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
