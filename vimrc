@@ -32,6 +32,7 @@ Plugin 'scrooloose/NERDTree'
 Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'majutsushi/tagbar'
 Plugin 'kien/ctrlp.vim'
+Plugin 'sjbach/lusty'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
