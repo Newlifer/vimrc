@@ -1,36 +1,34 @@
-set rop=type:directx,level:0.5,contrast:0.5;taamode:1
-
-" Enable vi-incompatible Vim extensions (redundant since .vimrc exists).
 set nocompatible
 set backspace=indent,eol,start
 filetype plugin on
 
-" Enable Vundle
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+call plug#begin('~/.vim/plugged')
 
-Plugin 'VundleVim/Vundle.vim'
+Plug 'tpope/vim-fugitive'
+Plug 'L9'
 
-Plugin 'tpope/vim-fugitive'
-Plugin 'L9'
+Plug 'bling/vim-airline'
+Plug 'adlawson/vim-sorcerer'
+Plug 'scrooloose/NERDTree'
+Plug 'jistr/vim-nerdtree-tabs'
+Plug 'majutsushi/tagbar'
+Plug 'kien/ctrlp.vim'
+Plug 'vim-ruby/vim-ruby'
+Plug 'sjl/badwolf'
+Plug 'jscappini/material.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'DrSpatula/vim-buddy'
+Plug 'fent/vim-frozen'
+Plug 'kristijanhusak/vim-hybrid-material'
 
-Plugin 'bling/vim-airline'
-Plugin 'adlawson/vim-sorcerer'
-Plugin 'scrooloose/NERDTree'
-Plugin 'jistr/vim-nerdtree-tabs'
-Plugin 'majutsushi/tagbar'
-Plugin 'kien/ctrlp.vim'
-Plugin 'vim-ruby/vim-ruby'
-Plugin 'sjbach/lusty'
+call plug#end()
 
-call vundle#end()            " required
-filetype plugin indent on    " required
-" Put your non-Plugin stuff after this line
+" colorscheme badwolf
+" colorscheme material
+colorscheme hybrid-material
 
-colorscheme sorcerer
 set laststatus=2
-set guifont=Input:h9
+set guifont=Input:h10
 set list
 set number
 set relativenumber
@@ -84,8 +82,3 @@ nnoremap <C-t>     :tabnew<CR>
 inoremap <C-S-tab> <Esc>:tabprevious<CR>i
 inoremap <C-tab>   <Esc>:tabnext<CR>i
 inoremap <C-t>     <Esc>:tabnew<CR>
-
-
-" Set environment variable to directory containing this vimrc.  Expect absolute
-" directory $HOME/.vim on Unix or %USERPROFILE%\vimfiles on Windows.
-" let $VIMFILES = expand("<sfile>:p:h")
