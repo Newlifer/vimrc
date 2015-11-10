@@ -37,7 +37,7 @@ set nowrap
 set hidden
 
 set ts=4 sts=4 sw=4 et
-set colorcolumn=80
+set colorcolumn=120
 
 " Opening tagbat
 nmap <F2> :TagbarToggle<CR>
