@@ -25,7 +25,7 @@ call plug#end()
 
 " colorscheme badwolf
 " colorscheme material
-colorscheme hybrid-material
+colorscheme hybrid_material
 
 set laststatus=2
 set guifont=Monoid:h10
