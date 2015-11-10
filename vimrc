@@ -28,7 +28,7 @@ call plug#end()
 colorscheme hybrid-material
 
 set laststatus=2
-set guifont=Input:h10
+set guifont=Monoid:h10
 set list
 set number
 set relativenumber
@@ -36,7 +36,8 @@ syntax on
 set nowrap
 set hidden
 
-set ts=3 sts=3 sw=3 et
+set ts=4 sts=4 sw=4 et
+set colorcolumn=80
 
 " Opening tagbat
 nmap <F2> :TagbarToggle<CR>
